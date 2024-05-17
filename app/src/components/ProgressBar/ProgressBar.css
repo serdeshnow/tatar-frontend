@@ -1,0 +1,14 @@
+
+.progress_container {
+    width: 90%;
+    height: 20px;
+    background-color: black;
+    display: flex;
+    align-items: start;
+
+  }
+  
+  .progress_bar {
+    height: 20px;
+    background-color: red;
+  }
