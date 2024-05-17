@@ -1,3 +1,50 @@
 .page_wrapper {
-  color: #000000;
+  width: 100%;
+  height: fit-content;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FCFADD;
+}
+
+.left_block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ach_title {
+  text-align: left;
+  padding-left: 1%;
+}
+
+.achievements, .battle {
+  background-color: #ffffff;
+  padding: 1%;
+  border-radius: 20px;
+  border: 3px solid #7FBC9B;
+}
+
+.days_counter, .words_counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar_img {
+  height: 450px;
+}
+
+.avatar_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.progress-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 30%;
 }

@@ -2,9 +2,3 @@
   height: 1200px;
 }
 
-.progress-container {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  width: 30%;
-}
