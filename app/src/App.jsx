@@ -18,13 +18,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/forum" element={<ForumPage />} />
-          <Route path="/test" element={<GameTestPage />} />
-          <Route path="/account" element={<PersonalAccountPage />} />
-          <Route path="/raiting" element={<RaitingPage />} />
-          <Route path="/registration" element={<RegistrationPage />} />
-          <Route path="/shop" element={<ShopPage />} />
+          <Route path="courses" element={<CoursesPage />} />
+          <Route path="forum" element={<ForumPage />} />
+          <Route path="test" element={<GameTestPage />} />
+          <Route path="account" element={<PersonalAccountPage />} />
+          <Route path="raiting" element={<RaitingPage />} />
+          <Route path="registration" element={<RegistrationPage />} />
+          <Route path="shop" element={<ShopPage />} />
           {/* <Route path="" element={} /> */}
           <Route path="*" element={<NotfoundPage />} />
         </Route>

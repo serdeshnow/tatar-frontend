@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "../Header/Header.css";
 import logo from "../../assets/svg/logo.svg";
@@ -8,7 +9,9 @@ export default function Header() {
   return (
     <div className="header_wrapper">
       <div className="logo_wrapper">
-        <img src={logo} className="logo" alt="" />
+        <Link to="/" className="logo_link">
+          <img src={logo} className="logo" alt="" />
+        </Link>
       </div>
       <div className="nav_wrapper">
         <li className="list_item">Друзья</li>
@@ -17,10 +20,14 @@ export default function Header() {
       </div>
       <div className="echpochmack_counter">
         <p>16</p>
-        <img src={echpochmack} alt="" />
+        <Link to="shop" className="echpochmak_logo">
+          <img src={echpochmack} alt="" />
+        </Link>
       </div>
       <div className="profile_img" alt="">
-        <img src={profile_pic} alt="" />
+        <Link to="account" className="profile_logo">
+          <img src={profile_pic} alt="" />
+        </Link>
       </div>
     </div>
   );
