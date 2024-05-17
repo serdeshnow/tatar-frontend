@@ -1,4 +1,5 @@
 import "./styles/App.css";
+// import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./widgets/Layout/Layout.jsx";
 
@@ -10,6 +11,9 @@ import { GameTestPage } from "./pages/GameTestPage.jsx";
 import { PersonalAccountPage } from "./pages/PersonalAccountPage.jsx";
 import { RaitingPage } from "./pages/RaitingPage.jsx";
 import { RegistrationPage } from "./pages/RegistrationPage.jsx";
+import { RegistrationIntroduction1Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction1Page.jsx";
+import { RegistrationIntroduction2Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction2Page.jsx";
+import { RegistrationIntroduction3Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction3Page.jsx";
 import { ShopPage } from "./pages/ShopPage.jsx";
 
 function App() {
@@ -23,8 +27,21 @@ function App() {
           <Route path="test" element={<GameTestPage />} />
           <Route path="account" element={<PersonalAccountPage />} />
           <Route path="raiting" element={<RaitingPage />} />
-          <Route path="registration" element={<RegistrationPage />} />
           <Route path="shop" element={<ShopPage />} />
+          <Route path="registration" element={<RegistrationPage />} />
+          <Route
+            path="registration/introduction_1"
+            element={<RegistrationIntroduction1Page />}
+          />
+          <Route
+            path="registration/introduction_2"
+            element={<RegistrationIntroduction2Page />}
+          />
+          <Route
+            path="registration/introduction_3"
+            element={<RegistrationIntroduction3Page />}
+          />
+          {/* </Route> */}
           {/* <Route path="" element={} /> */}
           <Route path="*" element={<NotfoundPage />} />
         </Route>
