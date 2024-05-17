@@ -1,0 +1,10 @@
+#to_top_button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+#to_top_button > button {
+  border-radius: 40px;
+  padding: 0;
+}

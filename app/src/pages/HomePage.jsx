@@ -6,6 +6,7 @@ export const HomePage = () => {
     <div className="page_wrapper">
       <h1>HomePage</h1>
       <p>Link to </p>
+      <p className="home">Big tech</p>
       <Button>button</Button>
     </div>
   );
