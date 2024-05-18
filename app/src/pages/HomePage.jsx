@@ -1,4 +1,3 @@
-
 import "../styles/HomePage.css";
 import Button from "../widgets/Button/Button.jsx";
 import DropDown from "../widgets/MUI/DropDown.js";
