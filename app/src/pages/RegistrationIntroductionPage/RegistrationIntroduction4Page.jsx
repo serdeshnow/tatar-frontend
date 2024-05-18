@@ -8,9 +8,9 @@ export const RegistrationIntroduction4Page = () => {
   console.log("Reg4");
   return (
     <div className="reg_page_wrapper">
-      <h1>Вы молодец!</h1>
-      <h1>Давайте завершим регистрацию</h1>
-      <TextForm labelTitle="Имя пользователя" />
+      <h1 className="reg_txt">Вы молодец!</h1>
+      <h1 className="reg_txt">Давайте завершим регистрацию</h1>
+      <TextForm labelTitle="Имя пользователя" className='reg_form'/>
       <TextForm labelTitle="Почта" />
       <TextForm labelTitle="Пароль" />
       <DropdownForm labelTitle="Пол">
@@ -18,7 +18,7 @@ export const RegistrationIntroduction4Page = () => {
         <option value="female">Женский</option>
       </DropdownForm>
       <Link to="/">
-        <Button>GotoHome</Button>
+        <button className="reg_btn">Зарегистрироваться</button>
       </Link>
     </div>
   );

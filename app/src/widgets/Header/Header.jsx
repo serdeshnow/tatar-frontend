@@ -3,7 +3,7 @@ import React from "react";
 import "../Header/Header.css";
 import logo from "../../assets/svg/logo.svg";
 import echpochmack from "../../assets/svg/echpochmack.svg";
-import profile_male from "../../assets/png/profile_male.png";
+import profile_male from "../../assets/svg/profile_male.svg";
 
 export default function Header() {
   return (

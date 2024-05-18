@@ -11,7 +11,7 @@ const colorTable = (val) => {
     case val >= 50 && val <= 80:
       return { color: "#E2C84E", img: yellow_strike };
     case val > 80:
-      return { color: "#C1CB68", img: green_strike };
+      return { color: "#BDC667", img: green_strike };
     default:
       return { color: "#FFFFFF" };
   }
@@ -28,7 +28,7 @@ export default function ProgressBarContainer({ label, value }) {
         <img src={colorTable(value)["img"]} className="strike_img" alt="" />
         <a
           href="/"
-          style={{ color: colorTable(value)["color"] }}
+          style={{ color: '#000', fontWeight: "400" }}
           className="upgrade_link"
         >
           повысить
