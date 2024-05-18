@@ -5,15 +5,10 @@ import Button from "../widgets/Button/Button.jsx";
 export const RegistrationPage = () => {
   return (
     <div className="page_wrapper">
-<<<<<<< HEAD
       <h1>RegistrationPage</h1>
       <Link to="introduction_1">
         <Button>Goto1</Button>
       </Link>
-=======
-      
-      
->>>>>>> layout-branch
     </div>
   );
 };
