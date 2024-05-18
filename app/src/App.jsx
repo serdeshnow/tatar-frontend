@@ -2,7 +2,7 @@ import "./styles/App.css";
 // import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./widgets/Layout/Layout.jsx";
-import { RegLayout } from "./widgets/Layout/RegLayout.jsx";
+// import { RegLayout } from "./widgets/Layout/RegLayout.jsx";
 
 // import { HomePage } from "./pages/HomePage.jsx";
 import { NotfoundPage } from "./pages/NotfoundPage.jsx";

@@ -5,7 +5,7 @@ import DropdownForm from "../widgets/DropdownForm/DropdownForm.jsx";
 
 export const FriendsPage = () => {
   return (
-    <div className="friends_wrapper page_wrapper">
+    <div className="friends_wrapper">
       <h1>FriendsPage</h1>
       <div className="form_wrapper">
         <TextFrom labelTitle="Почта" id="mail" />
