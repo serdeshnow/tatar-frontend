@@ -14,9 +14,15 @@ export default function Header() {
         </Link>
       </div>
       <div className="nav_wrapper">
-        <li className="list_item">Друзья</li>
-        <li className="list_item">Форум</li>
-        <li className="list_item">Все курсы</li>
+        <li className="list_item">
+          <Link to="friends">Друзья</Link>
+        </li>
+        <li className="list_item">
+          <Link to="forum">Форум</Link>
+        </li>
+        <li className="list_item">
+          <Link to="courses">Все курсы</Link>
+        </li>
       </div>
       <div className="echpochmack_counter">
         <p className="echpochmak_amount">16</p>
@@ -25,7 +31,7 @@ export default function Header() {
         </Link>
       </div>
       <div alt="">
-        <Link to="account" className="profile_logo">
+        <Link to="/" className="profile_logo">
           <img src={profile_male} className="profile_img" alt="" />
         </Link>
       </div>
