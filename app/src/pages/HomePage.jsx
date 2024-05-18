@@ -11,6 +11,6 @@ export const HomePage = () => {
       <p className="home">Big tech</p>
       <DropDown />
       <Button>button</Button>
-    
+    </div>
   );
 };

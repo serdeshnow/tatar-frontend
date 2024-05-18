@@ -39,7 +39,7 @@ export const PersonalAccountPage = () => {
       <div className="progress-container">
         <p className="level_bar">уровень 1</p>
         <ProgressBar isMain={true} width={10}/>
-        <ProgressBarContainer label='Грамматика' value={20}/>
+        <ProgressBarContainer label='Грамматика' value={10}/>
         {/* хуярь данные об уровнях с бека в value */}
         <ProgressBarContainer label='Вокабуляр' value={60}/>
         <ProgressBarContainer label='Говорение' value={90}/>
