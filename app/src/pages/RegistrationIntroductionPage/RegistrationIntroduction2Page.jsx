@@ -27,7 +27,7 @@ export const RegistrationIntroduction2Page = () => {
             - вперёд!
           </h1>
           <h1 className="reg2_title">И мы не останавливаемся</h1>
-          <Link to="/registration/introduction_3">
+          <Link to="/registration/introduction_4">
             <button className="alga_btn">Алга</button>
           </Link>
         </div>
