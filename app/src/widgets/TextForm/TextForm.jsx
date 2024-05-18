@@ -2,8 +2,13 @@ import "./TextForm.css";
 import React from "react";
 import { useState } from "react";
 
-export default function TextForm({ id = "name", labelTitle = "LabelTitle" }) {
+export default function TextForm({
+  id = "name",
+  labelTitle = "LabelTitle",
+  type = "text",
+}) {
   const [textForm, setTextForm] = useState("");
+  const [textFormDirty, setTextFormDirty] = useState(false);
   const [hasError, setHasError] = useState(false);
   function handleTextFormChange(event) {
     setTextForm(event.target.value);
@@ -17,7 +22,7 @@ export default function TextForm({ id = "name", labelTitle = "LabelTitle" }) {
         {labelTitle}
       </label>
       <input
-        type="text"
+        type={type}
         id={id}
         className="text_input"
         value={textForm}
