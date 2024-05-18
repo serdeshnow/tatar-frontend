@@ -16,7 +16,9 @@ export const RegistrationPage = () => {
         <Link to="introduction_1">
           <button className="reg_start_btn">Начать</button>
         </Link>
-        <button className="already_reg">Уже есть аккаунт</button>
+        <Link to="auth">
+          <button className="already_reg">Уже есть аккаунт</button>
+        </Link>
       </div>
     </div>
   );
