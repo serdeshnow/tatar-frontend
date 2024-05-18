@@ -15,6 +15,8 @@ import { RegistrationPage } from "./pages/RegistrationPage.jsx";
 import { RegistrationIntroduction1Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction1Page.jsx";
 import { RegistrationIntroduction2Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction2Page.jsx";
 import { RegistrationIntroduction3Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction3Page.jsx";
+import { RegistrationIntroduction4Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction4Page.jsx";
+
 import { ShopPage } from "./pages/ShopPage.jsx";
 import { FriendsPage } from "./pages/FriendsPage.jsx";
 
@@ -48,24 +50,28 @@ function App() {
           {/* <Route path="account" element={<PersonalAccountPage />} /> */}
           <Route path="raiting" element={<RaitingPage />} />
           <Route path="shop" element={<ShopPage />} />
-          
+
           {/* </Route> */}
           {/* <Route path="" element={} /> */}
           <Route path="*" element={<NotfoundPage />} />
         </Route>
         <Route path="registration" element={<RegistrationPage />} />
-          <Route
-            path="registration/introduction_1"
-            element={<RegistrationIntroduction1Page />}
-          />
-          <Route
-            path="registration/introduction_2"
-            element={<RegistrationIntroduction2Page />}
-          />
-          <Route
-            path="registration/introduction_3"
-            element={<RegistrationIntroduction3Page />}
-          />
+        <Route
+          path="registration/introduction_1"
+          element={<RegistrationIntroduction1Page />}
+        />
+        <Route
+          path="registration/introduction_2"
+          element={<RegistrationIntroduction2Page />}
+        />
+        <Route
+          path="registration/introduction_3"
+          element={<RegistrationIntroduction3Page />}
+        />
+        <Route
+          path="registration/introduction_4"
+          element={<RegistrationIntroduction4Page />}
+        />
       </Routes>
     </div>
   );

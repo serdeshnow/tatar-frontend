@@ -6,11 +6,15 @@ export const RegistrationIntroduction2Page = () => {
   console.log("Reg2");
   return (
     <div className="reg2_page_wrapper">
-      <h1 className="reg2_title"><a className="alga">Алга</a> - вперёд!</h1>
+      <h1 className="reg2_title">
+        <a href="/" className="alga">
+          Алга
+        </a>
+        - вперёд!
+      </h1>
       <h1 className="reg2_title">И мы не останавливаемся</h1>
       <Link to="/registration/introduction_3">
-        <button>Алга</button>
-        <Button>Goto3</Button>
+        <Button>Алга</Button>
       </Link>
     </div>
   );

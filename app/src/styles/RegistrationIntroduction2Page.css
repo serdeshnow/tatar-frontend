@@ -1,15 +1,22 @@
 .reg2_page_wrapper {
-    width: 100%;
-    height: 100vh;
-    background-color: #FCFADD;
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfadd;
 }
 
-.reg2_title, .alga {
-    color: #482C14;
-    font-weight: 500;
-    font-size: 5vw;
+.reg2_title,
+.alga {
+  color: #482c14;
+  font-weight: 500;
+  font-size: 5vw;
+  cursor: default;
 }
 
 .alga {
-    text-decoration: underline;
+  color: #482c14;
+  text-decoration: underline;
+}
+
+.alga:visited {
+  color: #482c14;
 }

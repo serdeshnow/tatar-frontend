@@ -1,6 +1,6 @@
 import React from "react";
 // import { useState } from "react";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import "./DropdownForm.css";
 
 export default function DropdownForm({
@@ -18,8 +18,6 @@ export default function DropdownForm({
           <option value="vocabulary">Словарь</option>
           <option value="speaking">Говорение</option>
         </select>
-
-        <Button>Отправить</Button>
       </from>
     </div>
   );
