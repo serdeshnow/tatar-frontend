@@ -19,7 +19,7 @@ export default function Header() {
         <li className="list_item">Все курсы</li>
       </div>
       <div className="echpochmack_counter">
-        <p>16</p>
+        <p className="echpochmak_amount">16</p>
         <Link to="shop" className="echpochmak_logo">
           <img src={echpochmack} alt="" />
         </Link>
