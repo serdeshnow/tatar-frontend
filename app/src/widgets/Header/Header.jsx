@@ -24,9 +24,9 @@ export default function Header() {
           <img src={echpochmack} alt="" />
         </Link>
       </div>
-      <div className="profile_img" alt="">
+      <div alt="">
         <Link to="account" className="profile_logo">
-          <img src={profile_pic} alt="" />
+          <img src={profile_pic} className="profile_img" alt="" />
         </Link>
       </div>
     </div>
