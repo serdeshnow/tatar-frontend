@@ -2,7 +2,7 @@ import "./TextForm.css";
 import React from "react";
 import { useState } from "react";
 
-export default function Form({ id = "name", labelTitle = "LabelTitle" }) {
+export default function TextForm({ id = "name", labelTitle = "LabelTitle" }) {
   const [textForm, setTextForm] = useState("");
   const [hasError, setHasError] = useState(false);
   function handleTextFormChange(event) {

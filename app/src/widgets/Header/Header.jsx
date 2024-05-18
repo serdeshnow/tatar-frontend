@@ -15,6 +15,9 @@ export default function Header() {
       </div>
       <div className="nav_wrapper">
         <li className="list_item">
+          <Link to="registration">Рега</Link>
+        </li>
+        <li className="list_item">
           <Link to="friends">Друзья</Link>
         </li>
         <li className="list_item">

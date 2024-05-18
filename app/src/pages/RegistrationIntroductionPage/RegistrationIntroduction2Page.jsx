@@ -8,7 +8,7 @@ export const RegistrationIntroduction2Page = () => {
     <div className="page_wrapper">
       <h1>RegistrationIntroduction2Page</h1>
       <Link to="/registration/introduction_3">
-        <Button>Goto2</Button>
+        <Button>Goto3</Button>
       </Link>
     </div>
   );
