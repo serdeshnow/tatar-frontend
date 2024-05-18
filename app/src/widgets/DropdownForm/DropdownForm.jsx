@@ -7,17 +7,30 @@ export default function DropdownForm({
   id = "name",
   labelTitle = "LabelTitle",
   children,
+  chosen,
+  setChosen,
 }) {
+  const handleChange = (val) => {
+    setChosen(val);
+  };
+
   return (
     <div className="component_wrapper">
-      <from className="form_wrapper">
+      <form className="form_wrapper">
         <label htmlFor={id} className="text_label">
           {labelTitle}
         </label>
-        <select id={id} className="text_input_select">
+        <select
+          value={chosen}
+          onChange={(e) => {
+            handleChange(e.target.value);
+          }}
+          id={id}
+          className="text_input_select"
+        >
           {children}
         </select>
-      </from>
+      </form>
     </div>
   );
 }

@@ -6,9 +6,10 @@ export default function TextForm({
   id = "name",
   labelTitle = "LabelTitle",
   type = "text",
+  textForm,
+  setTextForm,
 }) {
-  const [textForm, setTextForm] = useState("");
-  const [textFormDirty, setTextFormDirty] = useState(false);
+  // const [textForm, setTextForm] = useState("");
   const [hasError, setHasError] = useState(false);
   function handleTextFormChange(event) {
     setTextForm(event.target.value);

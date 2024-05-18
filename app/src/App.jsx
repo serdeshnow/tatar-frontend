@@ -1,5 +1,4 @@
 import "./styles/App.css";
-// import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./widgets/Layout/Layout.jsx";
 // import { RegLayout } from "./widgets/Layout/RegLayout.jsx";
@@ -14,7 +13,7 @@ import { RaitingPage } from "./pages/RaitingPage.jsx";
 import { RegistrationPage } from "./pages/RegistrationPage.jsx";
 import { RegistrationIntroduction1Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction1Page.jsx";
 import { RegistrationIntroduction2Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction2Page.jsx";
-import { RegistrationIntroduction3Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction3Page.jsx";
+// import { RegistrationIntroduction3Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction3Page.jsx";
 import { RegistrationIntroduction4Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction4Page.jsx";
 import { SignUpPage } from "./pages/SignUpPage.jsx";
 

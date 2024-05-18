@@ -5,8 +5,13 @@ import fire from "../assets/svg/fire.svg";
 import book from "../assets/svg/book.svg";
 import friend_avatar from "../assets/svg/friend_avatar.svg";
 import ProgressBarContainer from "../components/ProgressBarContainer/ProgressBarContainer.js";
+import { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
 
 export const PersonalAccountPage = () => {
+  const [cookies, setCookies] = useCookies(["id"]);
+  useEffect(() => {}, []);
+
   return (
     <div className="persAcc_page_wrapper">
 
