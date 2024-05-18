@@ -3,7 +3,7 @@ import React from "react";
 import "../Header/Header.css";
 import logo from "../../assets/svg/logo.svg";
 import echpochmack from "../../assets/svg/echpochmack.svg";
-import profile_pic from "../../assets/png/profile_pic.png";
+import profile_male from "../../assets/png/profile_male.png";
 
 export default function Header() {
   return (
@@ -26,7 +26,7 @@ export default function Header() {
       </div>
       <div alt="">
         <Link to="account" className="profile_logo">
-          <img src={profile_pic} className="profile_img" alt="" />
+          <img src={profile_male} className="profile_img" alt="" />
         </Link>
       </div>
     </div>
