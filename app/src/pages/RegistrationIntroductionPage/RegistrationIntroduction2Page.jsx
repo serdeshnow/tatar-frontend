@@ -11,7 +11,7 @@ export const RegistrationIntroduction2Page = () => {
     <div className="reg2_page_wrapper">
       <h1 className="reg2_title"><a className="alga_txt">Алга</a> - вперёд!</h1>
       <h1 className="reg2_title">И мы не останавливаемся</h1>
-      <Link to="/registration/introduction_3">
+      <Link to="/registration/introduction_4">
         <button className="alga_btn">Алга</button>
       </Link>
     </div>
