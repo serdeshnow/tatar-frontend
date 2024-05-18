@@ -10,6 +10,7 @@ export const RegistrationIntroduction2Page = () => {
       <h1 className="reg2_title">И мы не останавливаемся</h1>
       <Link to="/registration/introduction_3">
         <button>Алга</button>
+        <Button>Goto3</Button>
       </Link>
     </div>
   );

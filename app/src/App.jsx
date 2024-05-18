@@ -2,6 +2,7 @@ import "./styles/App.css";
 // import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./widgets/Layout/Layout.jsx";
+// import { RegLayout } from "./widgets/Layout/RegLayout.jsx";
 
 // import { HomePage } from "./pages/HomePage.jsx";
 import { NotfoundPage } from "./pages/NotfoundPage.jsx";
@@ -20,6 +21,23 @@ import { FriendsPage } from "./pages/FriendsPage.jsx";
 function App() {
   return (
     <div className="App">
+      {/* <Routes>
+        <Route path="/registration" element={<RegLayout />}>
+          <Route index element={<RegistrationPage />} />
+          <Route
+            path="registration/introduction_1"
+            element={<RegistrationIntroduction1Page />}
+          />
+          <Route
+            path="registration/introduction_2"
+            element={<RegistrationIntroduction2Page />}
+          />
+          <Route
+            path="registration/introduction_3"
+            element={<RegistrationIntroduction3Page />}
+          />
+        </Route>
+      </Routes> */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<PersonalAccountPage />} />
