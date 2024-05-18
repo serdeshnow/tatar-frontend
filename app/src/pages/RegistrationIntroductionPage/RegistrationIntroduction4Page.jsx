@@ -10,10 +10,13 @@ export const RegistrationIntroduction4Page = () => {
     <div className="reg_page_wrapper">
       <h1>Вы молодец!</h1>
       <h1>Давайте завершим регистрацию</h1>
-      <TextForm />
-      <TextForm />
-      <TextForm />
-      <DropdownForm />
+      <TextForm labelTitle="Имя пользователя" />
+      <TextForm labelTitle="Почта" />
+      <TextForm labelTitle="Пароль" />
+      <DropdownForm labelTitle="Пол">
+        <option value="male">Мужской</option>
+        <option value="female">Женский</option>
+      </DropdownForm>
       <Link to="/">
         <Button>GotoHome</Button>
       </Link>

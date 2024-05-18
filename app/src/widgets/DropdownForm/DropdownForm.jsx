@@ -6,6 +6,7 @@ import "./DropdownForm.css";
 export default function DropdownForm({
   id = "name",
   labelTitle = "LabelTitle",
+  children,
 }) {
   return (
     <div className="component_wrapper">
@@ -14,9 +15,7 @@ export default function DropdownForm({
           {labelTitle}
         </label>
         <select id={id} className="text_input_select">
-          <option value="grammar">Грамматика</option>
-          <option value="vocabulary">Словарь</option>
-          <option value="speaking">Говорение</option>
+          {children}
         </select>
       </from>
     </div>
