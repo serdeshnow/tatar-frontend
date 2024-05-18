@@ -8,7 +8,6 @@ export default function TextForm({
   type = "text",
 }) {
   const [textForm, setTextForm] = useState("");
-  const [textFormDirty, setTextFormDirty] = useState(false);
   const [hasError, setHasError] = useState(false);
   function handleTextFormChange(event) {
     setTextForm(event.target.value);
