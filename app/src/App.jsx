@@ -49,10 +49,10 @@ function App() {
           path="registration/introduction_2"
           element={<RegistrationIntroduction2Page />}
         />
-        <Route
+        {/* <Route
           path="registration/introduction_3"
           element={<RegistrationIntroduction3Page />}
-        />
+        /> */}
         <Route
           path="registration/introduction_4"
           element={<RegistrationIntroduction4Page />}
