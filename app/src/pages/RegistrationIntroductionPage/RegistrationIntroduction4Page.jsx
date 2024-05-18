@@ -50,10 +50,9 @@ export const RegistrationIntroduction4Page = () => {
 
   return (
     <div className="reg_page_wrapper">
-<<<<<<< HEAD
       {redirect && <Navigate replace to="/" />}
-      <h1>Вы молодец!</h1>
-      <h1>Давайте завершим регистрацию</h1>
+      <h1 className="reg_txt">Вы молодец!</h1>
+      <h1 className="reg_txt">Давайте завершим регистрацию</h1>
       <TextForm
         id="nick"
         textForm={username}
@@ -75,25 +74,12 @@ export const RegistrationIntroduction4Page = () => {
         labelTitle="Пароль"
       />
       <DropdownForm chosen={pol} setChosen={setPol} labelTitle="Пол">
-=======
-      <h1 className="reg_txt">Вы молодец!</h1>
-      <h1 className="reg_txt">Давайте завершим регистрацию</h1>
-      <TextForm labelTitle="Имя пользователя" className='reg_form'/>
-      <TextForm labelTitle="Почта" />
-      <TextForm labelTitle="Пароль" />
-      <DropdownForm labelTitle="Пол">
->>>>>>> 66ac64c145282df57ef7ae6b509e123cf4590a7a
-        <option value="male">Мужской</option>
+      <option value="male">Мужской</option>
         <option value="female">Женский</option>
-      </DropdownForm>
+        </DropdownForm>
       <Link to="/">
-<<<<<<< HEAD
-        <Button onClick={() => post(email, "", username, password, pol)}>
-          GotoHome
-        </Button>
-=======
-        <button className="reg_btn">Зарегистрироваться</button>
->>>>>>> 66ac64c145282df57ef7ae6b509e123cf4590a7a
+        <button onClick={() => post(email, "", username, password, pol)} className="reg_btn">Зарегистрироваться</button>
+
       </Link>
     </div>
   );
