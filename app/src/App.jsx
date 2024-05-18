@@ -30,7 +30,12 @@ function App() {
           {/* <Route path="account" element={<PersonalAccountPage />} /> */}
           <Route path="raiting" element={<RaitingPage />} />
           <Route path="shop" element={<ShopPage />} />
-          <Route path="registration" element={<RegistrationPage />} />
+          
+          {/* </Route> */}
+          {/* <Route path="" element={} /> */}
+          <Route path="*" element={<NotfoundPage />} />
+        </Route>
+        <Route path="registration" element={<RegistrationPage />} />
           <Route
             path="registration/introduction_1"
             element={<RegistrationIntroduction1Page />}
@@ -43,10 +48,6 @@ function App() {
             path="registration/introduction_3"
             element={<RegistrationIntroduction3Page />}
           />
-          {/* </Route> */}
-          {/* <Route path="" element={} /> */}
-          <Route path="*" element={<NotfoundPage />} />
-        </Route>
       </Routes>
     </div>
   );

@@ -27,6 +27,12 @@
   font-size: 1.3em;
 }
 
+a, a:visited {
+  text-decoration: none;
+  text-decoration: none;
+  color: #000;
+}
+
 .echpochmack_counter {
   display: flex;
   flex-direction: row;

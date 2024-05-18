@@ -1,14 +1,19 @@
 import "../styles/RegistrationPage.css";
 import { Link } from "react-router-dom";
 import Button from "../widgets/Button/Button.jsx";
+import reg_pic from '../assets/svg/reg_pic.svg'
 
 export const RegistrationPage = () => {
   return (
-    <div className="page_wrapper">
-      <h1>RegistrationPage</h1>
-      <Link to="introduction_1">
-        <Button>Goto1</Button>
-      </Link>
+    <div className="reg_page_wrapper">
+        <h1 className="start_title">Преврати изучение татарского <br/> в интересную игру </h1>
+        <img src={reg_pic} alt='' className="reg_pic" />
+        <div className="reg_btn_container">
+          <Link to="introduction_1">
+            <button className="reg_start_btn">Начать</button>
+          </Link>
+          <Button>Уже есть аккаунт</Button>
+        </div>
     </div>
   );
 };
