@@ -48,9 +48,9 @@ export const SignUpPage = () => {
         <TextForm labelTitle="Пароль" id="password" type="password" />
         <div className="empty" />
         <Link to="/">
-          <Button type="submit" className="green_enter_btn">
+          <button type="submit" className="green_enter_btn">
             Войти
-          </Button>
+          </button>
         </Link>
       </div>
     </div>
