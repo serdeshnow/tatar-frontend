@@ -1,0 +1,48 @@
+.header_wrapper {
+  width: 100%;
+  height: 80px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  padding-left: 30%;
+}
+
+.nav_wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15%;
+}
+
+.list_item {
+  list-style-type: none;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 1.3em;
+}
+
+a, a:visited {
+  text-decoration: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.echpochmack_counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.echpochmak_amount {
+  font-size: 30px;
+}
+
+.profile_img {
+  height: 70px;
+}

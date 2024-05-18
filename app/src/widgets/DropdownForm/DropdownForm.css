@@ -1,0 +1,11 @@
+.text_input_select {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  border: 2px solid #482c14;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  /* margin: 0.5rem 0 1rem; */
+  height: 40px;
+  width: 18rem;
+  font-size: 15px;
+}

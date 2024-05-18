@@ -1,0 +1,19 @@
+.strike_img {
+    width: 30px;
+}
+
+.skill_title {
+    text-align: left;
+    /* padding-left: 15px; */
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.upgrade_link {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-left: 5px;
+  }
+  

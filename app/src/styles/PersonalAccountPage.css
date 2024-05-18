@@ -1,0 +1,100 @@
+.persAcc_page_wrapper {
+  width: 100%;
+  height: fit-content;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #EAF3D7;
+}
+
+.right_block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-right: 5%;
+  padding-top: 3%;
+}
+
+.acc_title {
+  text-align: left;
+  padding-left: 5%;
+  font-weight: 400;
+}
+
+.achievements,
+.battle {
+  background-color: #ffffff;
+  padding: 1% 3%;
+  margin-left: 10%;
+  border-radius: 20px;
+  border: none;
+}
+
+.battle_call {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar_battle {
+  width: 60px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+}
+
+.days_counter,
+.words_counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.counter_icon {
+  width: 40px;
+}
+
+.counter_txt {
+  padding-left: 15px;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.avatar_img {
+  height: 550px;
+}
+
+.avatar_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.progress-container {
+  display: flex;
+  /* gap: 5px; */
+  flex-direction: column;
+  width: 27%;
+  margin-left: 5%;
+  padding-top: 1%;
+}
+
+.start_btn {
+  background-color: #00b07f;
+  color: #ffffff;
+  border-radius: 200px;
+  height: 50px;
+  font-size: 1.8em;
+  border-style: none;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+
+.level_bar {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-weight: 700;
+  /* padding-left: 15px; */
+  margin-bottom: 5px;
+}
