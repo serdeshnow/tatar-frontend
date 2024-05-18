@@ -4,7 +4,7 @@
 }
 
 .page_title {
-  font-size: 60px;
+  font-size: 40px;
   color: #482C14;
   font-weight: 500;
   margin-bottom: 10vh;
@@ -20,5 +20,6 @@
   border: none;
   width: fit-content;
   font-size: 2em;
-  padding: 5px 15px;
+  padding: 5px 25px;
+  cursor: pointer;
 }

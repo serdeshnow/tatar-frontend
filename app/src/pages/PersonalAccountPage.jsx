@@ -12,6 +12,7 @@ export const PersonalAccountPage = () => {
   const [cookies, setCookies] = useCookies(["id"]);
   useEffect(() => {}, []);
 
+
   return (
     <div className="persAcc_page_wrapper">
 
@@ -23,7 +24,7 @@ export const PersonalAccountPage = () => {
         <ProgressBarContainer label="Вокабуляр" value={60} />
         <ProgressBarContainer label="Говорение" value={90} />
         {/* перенести и напилить */}
-        {/* <button>курсы</button> */}
+        
 
       </div>
 
@@ -54,7 +55,28 @@ export const PersonalAccountPage = () => {
             <p className="counter_txt">Геля ждёт Вашего ответа</p>
           </div>
         </div>
+
+        <input type="checkbox" id="hmt" class="hidden-menu-ticker"></input>
+
+    <ul class="hidden-menu">
+        <h1>Ваши курсы</h1> 
+        <div className="course"></div>
+        <div className="course"></div>
+        <div className="course"></div>
+        
+    </ul>
+
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+
       </div>
+
+    
+    
+
     </div>
   );
 };
