@@ -6,13 +6,15 @@ import reg_pic from '../assets/svg/reg_pic.svg'
 export const RegistrationPage = () => {
   return (
     <div className="reg_page_wrapper">
-        <h1 className="start_title">Преврати изучение татарского <br/> в интересную игру </h1>
-        <img src={reg_pic} alt='' className="reg_pic" />
+        <div className="reg_pic_container">
+          <img src={reg_pic} alt='' className="reg_pic" />
+        </div>
         <div className="reg_btn_container">
+          <h1 className="start_title">Преврати изучение татарского <br/> в интересную игру </h1>
           <Link to="introduction_1">
             <button className="reg_start_btn">Начать</button>
           </Link>
-          <Button>Уже есть аккаунт</Button>
+          <button className="already_reg">Уже есть аккаунт</button>
         </div>
     </div>
   );

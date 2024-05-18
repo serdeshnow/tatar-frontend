@@ -5,10 +5,11 @@ import Button from "../../widgets/Button/Button.jsx";
 export const RegistrationIntroduction2Page = () => {
   console.log("Reg2");
   return (
-    <div className="page_wrapper">
-      <h1>RegistrationIntroduction2Page</h1>
+    <div className="reg2_page_wrapper">
+      <h1 className="reg2_title"><a className="alga">Алга</a> - вперёд!</h1>
+      <h1 className="reg2_title">И мы не останавливаемся</h1>
       <Link to="/registration/introduction_3">
-        <Button>Goto2</Button>
+        <button>Алга</button>
       </Link>
     </div>
   );
