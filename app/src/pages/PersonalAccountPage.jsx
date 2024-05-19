@@ -11,6 +11,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export const PersonalAccountPage = () => {
+  const [isBattled, setIsBattled] = useState(false);
+
   const [resDataUser, setResDataUser] = useState({});
   const [cookies, setCookies] = useCookies(["id"]);
   const [hasData, setHasData] = useState(false);
@@ -24,9 +26,8 @@ export const PersonalAccountPage = () => {
     await axios
       .get(`http://81.31.247.55:8080/user/get/{id}?id=${cookies.id}`)
       .then((res) => {
-        console.log("GetRes", res);
-        console.log("GetResData", res.data);
-        console.log("GetResDataUser", res.data.user);
+        // console.log("GetResData", res.data);
+        // console.log("GetResDataUser", res.data.user);
         setResDataUser(res.data.user);
       })
       .catch((e) => {
@@ -81,34 +82,39 @@ export const PersonalAccountPage = () => {
         </div>
         <div className="battle">
           <h1 className="acc_title">Бросить вызов!</h1>
-          <div className="battle_call">
-            {/* <img src={fire} className="counter_icon" alt="" /> */}
-            <img src={friend_avatar} className="avatar_battle" alt="" />
-            <p className="counter_txt">Геля ждёт Вашего ответа</p>
-          </div>
+          <Link
+            to="battle"
+            onClick={() => {
+              setIsBattled(true);
+            }}
+          >
+            <div className="battle_call">
+              <img src={friend_avatar} className="avatar_battle" alt="" />
+              {!isBattled ? (
+                <p className="counter_txt">Геля ждёт Вашего ответа</p>
+              ) : (
+                <p className="counter_txt">Ждем результатов с Геля</p>
+              )}
+              {/* <img src={fire} className="counter_icon" alt="" /> */}
+            </div>
+          </Link>
         </div>
 
         <input type="checkbox" id="hmt" class="hidden-menu-ticker"></input>
 
-    <ul class="hidden-menu">
-        <h1>Ваши курсы</h1> 
-        <div className="course"></div>
-        <div className="course"></div>
-        <div className="course"></div>
-        
-    </ul>
+        <ul class="hidden-menu">
+          <h1>Ваши курсы</h1>
+          <div className="course"></div>
+          <div className="course"></div>
+          <div className="course"></div>
+        </ul>
 
-    <label class="btn-menu" for="hmt">
-      <span class="first"></span>
-      <span class="second"></span>
-      <span class="third"></span>
-    </label>
-
+        <label class="btn-menu" for="hmt">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+        </label>
       </div>
-
-    
-    
-
     </div>
   );
 };

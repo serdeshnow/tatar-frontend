@@ -1,0 +1,16 @@
+.page_wrapper {
+  color: #000000;
+}
+.progress_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_opponent_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
