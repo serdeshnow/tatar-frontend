@@ -160,6 +160,7 @@ export const BattlePage = () => {
         return (
           <div>
             <h1>Вы молодец!</h1>
+            <p>Ждем результатов соперника.</p>
             <Link to="/">
               <button className="toMain_btn">На главную</button>
             </Link>
@@ -173,22 +174,28 @@ export const BattlePage = () => {
       <div className="page_wrapper">
         {hasData && console.log("PersonalPage", cookies)}
         <div className="title_form_wrapper">
-        {data.questions[Math.min(curr - 1, data.questions.length - 1)]
-          .description && (
-          <h1>
-            {
-              data.questions[Math.min(curr - 1, data.questions.length - 1)]
-                .description
-            }
-          </h1>
-        )}
-        <div className="forms_wrapper">{hasData && getForm()}</div>
+          {data.questions[Math.min(curr - 1, data.questions.length - 1)]
+            .description &&
+            curr < 5 && (
+              <h1>
+                {
+                  data.questions[Math.min(curr - 1, data.questions.length - 1)]
+                    .description
+                }
+              </h1>
+            )}
+          <div className="forms_wrapper">{hasData && getForm()}</div>
         </div>
         <div className="progress_wrapper">
           <div className="progress">{curr < 5 && <p>Вопрос {curr}/4</p>}</div>
           <div className="progress_opponent_wrapper">
             <p className="opponent_txt">Ваш оппонент: </p>
-            <img src={friend_avatar} className="avatar_battle" id='avatar_wt_pad' alt="" />
+            <img
+              src={friend_avatar}
+              className="avatar_battle"
+              id="avatar_wt_pad"
+              alt=""
+            />
             <p>Геля</p>
           </div>
         </div>

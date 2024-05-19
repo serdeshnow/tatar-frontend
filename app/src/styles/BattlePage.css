@@ -1,10 +1,10 @@
 .page_wrapper {
   color: #000000;
-  background-color: #EAF3D7;
+  background-color: #eaf3d7;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  height: 75vh;
+  height: 82vh;
 }
 
 .title_form_wrapper {
@@ -36,7 +36,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
 }
 
 .opponent_txt {
