@@ -11,6 +11,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export const PersonalAccountPage = () => {
+  const [isBattled, setIsBattled] = useState(false);
+
   const [resDataUser, setResDataUser] = useState({});
   const [cookies, setCookies] = useCookies(["id"]);
   const [hasData, setHasData] = useState(false);
@@ -81,11 +83,19 @@ export const PersonalAccountPage = () => {
         </div>
         <div className="battle">
           <h1 className="acc_title">Бросить вызов!</h1>
-          <Link to="battle">
+          <Link
+            to="battle"
+            onClick={() => {
+              setIsBattled(true);
+            }}
+          >
             <div className="battle_call">
               <img src={friend_avatar} className="avatar_battle" alt="" />
-              <p className="counter_txt">Геля ждёт Вашего ответа</p>
-
+              {!isBattled ? (
+                <p className="counter_txt">Геля ждёт Вашего ответа</p>
+              ) : (
+                <p className="counter_txt">Ждем результатов с Геля</p>
+              )}
               {/* <img src={fire} className="counter_icon" alt="" /> */}
             </div>
           </Link>
@@ -93,25 +103,19 @@ export const PersonalAccountPage = () => {
 
         <input type="checkbox" id="hmt" class="hidden-menu-ticker"></input>
 
-    <ul class="hidden-menu">
-        <h1>Ваши курсы</h1> 
-        <div className="course"></div>
-        <div className="course"></div>
-        <div className="course"></div>
-        
-    </ul>
+        <ul class="hidden-menu">
+          <h1>Ваши курсы</h1>
+          <div className="course"></div>
+          <div className="course"></div>
+          <div className="course"></div>
+        </ul>
 
-    <label class="btn-menu" for="hmt">
-      <span class="first"></span>
-      <span class="second"></span>
-      <span class="third"></span>
-    </label>
-
+        <label class="btn-menu" for="hmt">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+        </label>
       </div>
-
-    
-    
-
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import RadioForm from "../widgets/RadioForm/RadioForm";
 import "../styles/BattlePage.css";
+import { Link } from "react-router-dom";
 
 export const BattlePage = () => {
   const [button1, setButton1] = useState(false);
@@ -77,6 +78,16 @@ export const BattlePage = () => {
           />
         );
       }
+      case curr === 5: {
+        return (
+          <div>
+            <h1>Вы молодец!</h1>
+            <Link to="/">
+              <button onClick={() => {}}>На главную</button>
+            </Link>
+          </div>
+        );
+      }
     }
   };
 
@@ -84,6 +95,7 @@ export const BattlePage = () => {
     <div className="page_wrapper">
       <h1>BattlePage</h1>
       <div className="forms_wrapper">{getForm()}</div>
+      <div className="progress">{curr < 5 && <p>Вопрос {curr}/4</p>}</div>
     </div>
   );
 };
