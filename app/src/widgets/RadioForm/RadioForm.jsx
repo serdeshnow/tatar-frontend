@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 export default function RadioForm({
   q1 = "q1",
   id1 = 1,
-  q2 = "q2",
+  q2 = "Ответ 2",
   id2 = 2,
-  q3 = "q3",
+  q3 = "Ответ 3",
   id3 = 3,
   setChecked,
   idcorrect = 1,
@@ -108,7 +108,7 @@ export default function RadioForm({
       </div>
 
       <button
-        className="start_btn"
+        className="start_btn_test"
         onClick={() => (isChecked ? handleSubmit() : handleCheck())}
       >
         {isChecked ? "Продолжить" : "Проверить"}

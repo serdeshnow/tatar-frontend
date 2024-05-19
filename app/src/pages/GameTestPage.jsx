@@ -34,7 +34,7 @@ export const GameTestPage = () => {
   }, []);
 
   const [button1, setButton1] = useState(false);
-  const radioQuestion = "bui";
+  const radioQuestion = "Ответ 1";
 
   const [curr, setCurr] = useState(1);
   const [res, setRes] = useState({});
