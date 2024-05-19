@@ -44,7 +44,7 @@ export default function RadioForm({
 
   return (
     <div className="form_wrapper_radio">
-      <h1>{curr}</h1>
+      {/* <h1>Вопрос НАХУЙ{curr}</h1> */}
       <div className="questions_wrapper">
         <div
           style={{

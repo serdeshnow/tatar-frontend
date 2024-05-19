@@ -28,7 +28,7 @@ function App() {
           <Route index element={<PersonalAccountPage />} />
           <Route path="courses" element={<CoursesPage />} />
           <Route path="forum" element={<ForumPage />} />
-          <Route path="test" element={<GameTestPage />} />
+          
           <Route path="friends" element={<FriendsPage />} />
           {/* <Route path="account" element={<PersonalAccountPage />} /> */}
           <Route path="raiting" element={<RaitingPage />} />
@@ -56,6 +56,7 @@ function App() {
           path="registration/introduction_4"
           element={<RegistrationIntroduction4Page />}
         />
+        <Route path="test" element={<GameTestPage />} />
       </Routes>
     </div>
   );

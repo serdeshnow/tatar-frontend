@@ -67,10 +67,10 @@ export const GameTestPage = () => {
   };
 
   return (
-    <div className="page_wrapper">
-      <h1>Test Name</h1>
-      <p>Вопрос 1</p>
-      <p className="question">Question</p>
+    <div className="test_page_wrapper">
+      <h1 className="test_name">Название теста</h1>
+      <p className="question_num">Вопрос 1</p>
+      <p className="question_body">Тут будет Ваш вопрос</p>
       <div className="forms_wrapper">{getForm()}</div>
       {/* <button className="start_btn">Продолжить</button> */}
     </div>

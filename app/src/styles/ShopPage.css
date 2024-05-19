@@ -12,6 +12,10 @@
   height: 80vh;
   margin-top: 10vh;
   width: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .balance_title, .balance_counter {
