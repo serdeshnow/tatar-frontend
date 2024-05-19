@@ -84,7 +84,7 @@ export const BattlePage = () => {
           <div>
             <h1>Вы молодец!</h1>
             <Link to="/">
-              <button onClick={() => {}}>На главную</button>
+              <button>На главную</button>
             </Link>
           </div>
         );
