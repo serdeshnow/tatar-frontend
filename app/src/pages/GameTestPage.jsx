@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/GameTestPage.css";
 import RadioForm from "../widgets/RadioForm/RadioForm";
+import { Link } from "react-router-dom";
 
 export const GameTestPage = () => {
   const [button1, setButton1] = useState(false);
@@ -15,7 +16,7 @@ export const GameTestPage = () => {
 
   const getForm = () => {
     switch (true) {
-      case curr == 1: {
+      case curr === 1: {
         return (
           <RadioForm
             curr={curr}
@@ -23,11 +24,10 @@ export const GameTestPage = () => {
             res={res}
             setRes={setRes}
             q1={radioQuestion}
-            setChecked={setButton1}
           />
         );
       }
-      case curr == 2: {
+      case curr === 2: {
         return (
           <RadioForm
             curr={curr}
@@ -35,11 +35,10 @@ export const GameTestPage = () => {
             res={res}
             setRes={setRes}
             q1={radioQuestion}
-            setChecked={setButton1}
           />
         );
       }
-      case curr == 3: {
+      case curr === 3: {
         return (
           <RadioForm
             curr={curr}
@@ -47,11 +46,10 @@ export const GameTestPage = () => {
             res={res}
             setRes={setRes}
             q1={radioQuestion}
-            setChecked={setButton1}
           />
         );
       }
-      case curr == 4: {
+      case curr === 4: {
         return (
           <RadioForm
             curr={curr}
@@ -59,8 +57,17 @@ export const GameTestPage = () => {
             res={res}
             setRes={setRes}
             q1={radioQuestion}
-            setChecked={setButton1}
           />
+        );
+      }
+      case curr === 5: {
+        return (
+          <div>
+            <h1>Вы молодец!</h1>
+            <Link to="/">
+              <button>На главную</button>
+            </Link>
+          </div>
         );
       }
     }
