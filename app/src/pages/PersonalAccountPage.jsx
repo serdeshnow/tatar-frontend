@@ -26,7 +26,6 @@ export const PersonalAccountPage = () => {
     await axios
       .get(`http://81.31.247.55:8080/user/get/{id}?id=${cookies.id}`)
       .then((res) => {
-        console.log("GetRes", res);
         console.log("GetResData", res.data);
         console.log("GetResDataUser", res.data.user);
         setResDataUser(res.data.user);

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import RadioForm from "../widgets/RadioForm/RadioForm";
 import "../styles/BattlePage.css";
 import { Link } from "react-router-dom";
+import friend_avatar from "../assets/svg/friend_avatar.svg";
 
 export const BattlePage = () => {
   const [button1, setButton1] = useState(false);
@@ -95,7 +96,14 @@ export const BattlePage = () => {
     <div className="page_wrapper">
       <h1>BattlePage</h1>
       <div className="forms_wrapper">{getForm()}</div>
-      <div className="progress">{curr < 5 && <p>Вопрос {curr}/4</p>}</div>
+      <div className="progress_wrapper">
+        <div className="progress">{curr < 5 && <p>Вопрос {curr}/4</p>}</div>
+        <div className="progress_opponent_wrapper">
+          <p>Вы соревнуетесь с: </p>
+          <img src={friend_avatar} className="avatar_battle" alt="" />
+          <p>Геля</p>
+        </div>
+      </div>
     </div>
   );
 };
