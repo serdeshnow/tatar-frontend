@@ -1,12 +1,7 @@
 .header_wrapper {
   width: 100%;
   height: 70px;
-<<<<<<< HEAD
-  padding-top: 25px;
-  padding-bottom: 25px;
-=======
   padding: 10px 0px;
->>>>>>> 94d95b6a39e4c0a9ddee83be523014b4759f2ab0
   display: flex;
   flex-direction: row;
   justify-content: space-around;
