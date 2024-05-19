@@ -49,9 +49,9 @@ export default function RadioForm({
           style={{
             backgroundColor:
               isChecked && id1 == idcorrect
-                ? "#0F0"
+                ? "#C1CB68"
                 : isChecked && id1 !== idcorrect && id1 == option
-                ? "#F00"
+                ? "#E69281"
                 : "",
           }}
           className="question_wrapper"
@@ -69,9 +69,9 @@ export default function RadioForm({
           style={{
             backgroundColor:
               isChecked && id2 == idcorrect
-                ? "#0F0"
+                ? "#C1CB68"
                 : isChecked && id2 !== idcorrect && id2 == option
-                ? "#F00"
+                ? "#E69281"
                 : "",
           }}
           className="question_wrapper"
@@ -89,9 +89,9 @@ export default function RadioForm({
           style={{
             backgroundColor:
               isChecked && id3 == idcorrect
-                ? "#0F0"
+                ? "#C1CB68"
                 : isChecked && id3 !== idcorrect && id3 == option
-                ? "#F00"
+                ? "#E69281"
                 : "",
           }}
           className="question_wrapper"
