@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import friend_avatar from "../assets/svg/friend_avatar.svg";
 import axios from "axios";
 import { useCookies } from "react-cookie";
+import star from '../assets/img/star.png'
+import star1 from '../assets/img/star1.png'
+import star2 from '../assets/img/star2.png'
+
 
 export const BattlePage = () => {
   const [button1, setButton1] = useState(false);
@@ -159,8 +163,12 @@ export const BattlePage = () => {
       case curr === 5: {
         return (
           <div>
+            <img src={star} alt="" />
+            <img src={star1} alt="" />
+            <img src={star2} alt="" />
+
             <h1>Вы молодец!</h1>
-            <p>Ждем результатов соперника.</p>
+            <p>Ждем результатов соперника</p>
             <Link to="/">
               <button className="toMain_btn">На главную</button>
             </Link>
