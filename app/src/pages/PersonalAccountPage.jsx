@@ -7,24 +7,50 @@ import friend_avatar from "../assets/svg/friend_avatar.svg";
 import ProgressBarContainer from "../components/ProgressBarContainer/ProgressBarContainer.js";
 import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
+import axios from "axios";
 
 export const PersonalAccountPage = () => {
+  const [resDataUser, setResDataUser] = useState({});
   const [cookies, setCookies] = useCookies(["id"]);
-  useEffect(() => {}, []);
+  const [hasData, setHasData] = useState(false);
+  useEffect(() => {
+    if (cookies.id) {
+      setHasData(true);
+    }
+  }, [cookies.id]);
 
+  const get = async () => {
+    await axios
+      .get(`http://81.31.247.55:8080/user/get/{id}?id=${cookies.id}`)
+      .then((res) => {
+        console.log("GetRes", res);
+        console.log("GetResData", res.data);
+        console.log("GetResDataUser", res.data.user);
+        setResDataUser(res.data.user);
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  };
+
+  useEffect(() => {
+    get();
+  }, []);
   return (
     <div className="persAcc_page_wrapper">
-
+      {hasData && console.log("PersonalPage", cookies)}
       <div className="progress-container">
-        <p className="level_bar">уровень 1</p>
+        <p className="level_bar">уровень {resDataUser.level}</p>
         <ProgressBar isMain={true} width={10} />
-        <ProgressBarContainer label="Грамматика" value={20} />
+        <ProgressBarContainer label="Грамматика" value={resDataUser.grammar} />
         {/* хуярь данные об уровнях с бека в value */}
-        <ProgressBarContainer label="Вокабуляр" value={60} />
-        <ProgressBarContainer label="Говорение" value={90} />
+        <ProgressBarContainer
+          label="Вокабуляр"
+          value={resDataUser.vocabulary}
+        />
+        <ProgressBarContainer label="Говорение" value={resDataUser.speaking} />
         {/* перенести и напилить */}
         {/* <button>курсы</button> */}
-
       </div>
 
       <div className="avatar_wrapper">
@@ -38,12 +64,16 @@ export const PersonalAccountPage = () => {
           <h1 className="acc_title">Достижения:</h1>
           <div className="days_counter">
             <img src={fire} className="counter_icon" alt="" />
-            <p className="counter_txt">Вы заходите уже 5 дней!</p>
+            <p className="counter_txt">
+              Вы заходите уже {resDataUser.days} дней!
+            </p>
           </div>
           <div className="words_counter">
             {/* <img src={fire} className="counter_icon" alt="" /> */}
             <img src={book} className="counter_icon" alt="" />
-            <p className="counter_txt">8 новых слов за последнюю неделю</p>
+            <p className="counter_txt">
+              {resDataUser.achievement} новых слов за последнюю неделю
+            </p>
           </div>
         </div>
         <div className="battle">
