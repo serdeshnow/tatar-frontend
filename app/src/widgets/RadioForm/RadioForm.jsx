@@ -3,11 +3,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 export default function RadioForm({
-  q1 = "lui",
+  q1 = "q1",
   id1 = 1,
-  q2 = "hit",
+  q2 = "q2",
   id2 = 2,
-  q3 = "nit",
+  q3 = "q3",
   id3 = 3,
   setChecked,
   idcorrect = 1,
@@ -44,7 +44,6 @@ export default function RadioForm({
 
   return (
     <div className="form_wrapper_radio">
-      {/* <h1>Вопрос НАХУЙ{curr}</h1> */}
       <div className="questions_wrapper">
         <div
           style={{
