@@ -17,10 +17,10 @@ export default function Header() {
         <li className="list_item">
           <Link to="registration">Рега</Link>
         </li>
-        <li className="list_item">
+        <li className="list_item" id="friends">
           <Link to="friends">Друзья</Link>
         </li>
-        <li className="list_item">
+        <li className="list_item" id="forum">
           <Link to="forum">Форум</Link>
         </li>
         <li className="list_item">

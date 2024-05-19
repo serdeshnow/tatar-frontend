@@ -35,6 +35,13 @@ a:visited {
   color: #000;
 }
 
+#forum {
+  pointer-events: none;
+}
+
+#friends {
+  pointer-events: none;
+}
 .echpochmack_counter {
   display: flex;
   flex-direction: row;
