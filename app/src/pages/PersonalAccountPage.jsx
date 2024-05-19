@@ -81,11 +81,14 @@ export const PersonalAccountPage = () => {
         </div>
         <div className="battle">
           <h1 className="acc_title">Бросить вызов!</h1>
-          <div className="battle_call">
-            {/* <img src={fire} className="counter_icon" alt="" /> */}
-            <img src={friend_avatar} className="avatar_battle" alt="" />
-            <p className="counter_txt">Геля ждёт Вашего ответа</p>
-          </div>
+          <Link to="battle">
+            <div className="battle_call">
+              <img src={friend_avatar} className="avatar_battle" alt="" />
+              <p className="counter_txt">Геля ждёт Вашего ответа</p>
+
+              {/* <img src={fire} className="counter_icon" alt="" /> */}
+            </div>
+          </Link>
         </div>
       </div>
     </div>

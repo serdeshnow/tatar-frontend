@@ -16,6 +16,7 @@ import { RegistrationIntroduction2Page } from "./pages/RegistrationIntroductionP
 // import { RegistrationIntroduction3Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction3Page.jsx";
 import { RegistrationIntroduction4Page } from "./pages/RegistrationIntroductionPage/RegistrationIntroduction4Page.jsx";
 import { SignUpPage } from "./pages/SignUpPage.jsx";
+import { BattlePage } from "./pages/BattlePage.jsx";
 
 import { ShopPage } from "./pages/ShopPage.jsx";
 import { FriendsPage } from "./pages/FriendsPage.jsx";
@@ -29,12 +30,10 @@ function App() {
           <Route path="courses" element={<CoursesPage />} />
           <Route path="forum" element={<ForumPage />} />
           <Route path="test" element={<GameTestPage />} />
+          <Route path="battle" element={<BattlePage />} />
           <Route path="friends" element={<FriendsPage />} />
-          {/* <Route path="account" element={<PersonalAccountPage />} /> */}
           <Route path="raiting" element={<RaitingPage />} />
           <Route path="shop" element={<ShopPage />} />
-
-          {/* </Route> */}
           {/* <Route path="" element={} /> */}
           <Route path="*" element={<NotfoundPage />} />
         </Route>
