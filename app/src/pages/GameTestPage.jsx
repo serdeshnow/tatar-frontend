@@ -94,7 +94,7 @@ export const GameTestPage = () => {
           <div>
             <h1>Вы молодец!</h1>
             <Link to="/">
-              <button>На главную</button>
+              <button className="toMain_btn">На главную</button>
             </Link>
           </div>
         );
