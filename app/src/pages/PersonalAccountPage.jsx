@@ -124,11 +124,11 @@ export const PersonalAccountPage = () => {
           <div className="course"></div>
         </ul>
 
-        <label class="btn-menu" for="hmt">
+        {/* <label class="btn-menu" for="hmt">
           <span class="first"></span>
           <span class="second"></span>
           <span class="third"></span>
-        </label>
+        </label> */}
       </div>
     </div>
   );

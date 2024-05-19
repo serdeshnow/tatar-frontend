@@ -1,7 +1,7 @@
 .persAcc_page_wrapper {
   width: 100%;
   height: fit-content;
-  padding-top: 55px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,6 +67,8 @@
 .avatar_wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 
