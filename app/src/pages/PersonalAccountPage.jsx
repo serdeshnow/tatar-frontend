@@ -43,14 +43,29 @@ export const PersonalAccountPage = () => {
       {hasData && console.log("PersonalPage", cookies)}
       <div className="progress-container">
         <p className="level_bar">уровень {resDataUser.level}</p>
-        <ProgressBar isMain={true} width={10} />
-        <ProgressBarContainer label="Грамматика" value={resDataUser.grammar} />
+        <ProgressBar
+          isMain={true}
+          width={
+            ((resDataUser.grammar +
+              resDataUser.vocabulary +
+              resDataUser.speaking) /
+              3) *
+            10
+          }
+        />
+        <ProgressBarContainer
+          label="Грамматика"
+          value={resDataUser.grammar * 10}
+        />
         {/* хуярь данные об уровнях с бека в value */}
         <ProgressBarContainer
           label="Вокабуляр"
-          value={resDataUser.vocabulary}
+          value={resDataUser.vocabulary * 10}
         />
-        <ProgressBarContainer label="Говорение" value={resDataUser.speaking} />
+        <ProgressBarContainer
+          label="Говорение"
+          value={resDataUser.speaking * 10}
+        />
         {/* перенести и напилить */}
         {/* <button>курсы</button> */}
       </div>

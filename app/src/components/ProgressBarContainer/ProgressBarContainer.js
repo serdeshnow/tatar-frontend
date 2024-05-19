@@ -28,7 +28,7 @@ export default function ProgressBarContainer({ label, value }) {
         <img src={colorTable(value)["img"]} className="strike_img" alt="" />
         <a
           href="/"
-          style={{ color: '#000', fontWeight: "400" }}
+          style={{ color: "#000", fontWeight: "400" }}
           className="upgrade_link"
         >
           повысить
