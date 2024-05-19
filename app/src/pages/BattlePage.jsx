@@ -1,12 +1,41 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import RadioForm from "../widgets/RadioForm/RadioForm";
 import "../styles/BattlePage.css";
 import { Link } from "react-router-dom";
 import friend_avatar from "../assets/svg/friend_avatar.svg";
+import axios from "axios";
+import { useCookies } from "react-cookie";
 
 export const BattlePage = () => {
   const [button1, setButton1] = useState(false);
   const radioQuestion = "bui";
+
+  const [data, setData] = useState({});
+  const [cookies, setCookies] = useCookies(["id"]);
+  const [hasData, setHasData] = useState(false);
+
+  useEffect(() => {
+    if (cookies.id) {
+      setHasData(true);
+    }
+  }, [cookies.id]);
+
+  const get = async () => {
+    await axios
+      .get(`{id}?id=${cookies.id}`)
+      .then((res) => {
+        console.log("GetResData", res.data);
+        console.log("GetResDataUser", res.data.user);
+        setData(res.data.user);
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  };
+
+  useEffect(() => {
+    get();
+  }, []);
 
   const [curr, setCurr] = useState(1);
   const [res, setRes] = useState({});
@@ -94,6 +123,7 @@ export const BattlePage = () => {
 
   return (
     <div className="page_wrapper">
+      {hasData && console.log("PersonalPage", cookies)}
       <h1>BattlePage</h1>
       <div className="forms_wrapper">{getForm()}</div>
       <div className="progress_wrapper">
