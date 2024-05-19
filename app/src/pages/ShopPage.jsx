@@ -8,18 +8,18 @@ export const ShopPage = () => {
   return (
     <div className="shoppage_wrapper">
       <div className="shop_menu">
-        <h1 className="balance_title">Ваш баланс</h1>
+        {/* <h1 className="balance_title">Ваш баланс</h1>
         <div className="echpochmack_counter_shop">
           <p className="balance_counter">5</p>
           <img src={echpochmack} alt="echpochmack" className="price_pic"/>
-        </div>
-        {/* <a href="" className="my_skins_link">Мои скины</a>
+        </div> */}
+        <a href="" className="my_skins_link">Мои скины</a>
         <div className="menu_filter">
           <p className="filter_title">Фильтр</p>
           <a href="/" className="filter_link">Женские</a>
           <a href="/" className="filter_link">Мужские</a>
-        </div> */}
-        {/* <button className="shop_confirm_btn">Применить</button> */}
+        </div> 
+        <button className="shop_confirm_btn">Применить</button> 
       </div>
 
       <div className="shop_skins">

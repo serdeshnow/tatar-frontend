@@ -1,3 +1,22 @@
-.page_wrapper {
-  color: #000000;
+.test_page_wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #EAF3D7;
+}
+
+.test_name {
+  margin-top: 0;
+  padding-top: 50px;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.question_num {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.question_body {
+  font-size: 1.8em;
+  font-weight: 400;
 }

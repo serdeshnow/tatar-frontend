@@ -55,6 +55,7 @@ function App() {
           path="registration/introduction_4"
           element={<RegistrationIntroduction4Page />}
         />
+        <Route path="test" element={<GameTestPage />} />
       </Routes>
     </div>
   );
