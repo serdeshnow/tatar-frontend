@@ -1,6 +1,5 @@
 import "../../styles/RegistrationIntroduction4Page.css";
 import { Link } from "react-router-dom";
-import Button from "../../widgets/Button/Button.jsx";
 import TextForm from "../../widgets/TextForm/TextForm.jsx";
 import DropdownForm from "../../widgets/DropdownForm/DropdownForm.jsx";
 import { useState } from "react";
@@ -9,8 +8,9 @@ import { Navigate } from "react-router-dom";
 import axios from "axios";
 
 export const RegistrationIntroduction4Page = () => {
-  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
+
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [pol, setPol] = useState("Мужской");
 
@@ -30,11 +30,7 @@ export const RegistrationIntroduction4Page = () => {
       sex: sex,
     };
     await axios
-      .post(
-        "http://81.31.247.55:8080/swagger/index.html#/user/post_user_create",
-        data,
-        { headers }
-      )
+      .post("http://81.31.247.55:8080/user/create", data, { headers })
       .then((res) => {
         if (res.status === 200) {
           setCookies("id", res.data["id"], { path: "/" });
@@ -74,12 +70,17 @@ export const RegistrationIntroduction4Page = () => {
         labelTitle="Пароль"
       />
       <DropdownForm chosen={pol} setChosen={setPol} labelTitle="Пол">
-      <option value="male">Мужской</option>
+        <option value="male">Мужской</option>
         <option value="female">Женский</option>
-        </DropdownForm>
+      </DropdownForm>
       <Link to="/">
-        <button onClick={() => post(email, "", username, password, pol)} className="reg_btn">Зарегистрироваться</button>
-
+        <button
+          type="submit"
+          onClick={() => post(email, "", username, password, pol)}
+          className="reg_btn"
+        >
+          Зарегистрироваться
+        </button>
       </Link>
     </div>
   );
