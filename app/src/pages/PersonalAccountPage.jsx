@@ -90,7 +90,28 @@ export const PersonalAccountPage = () => {
             </div>
           </Link>
         </div>
+
+        <input type="checkbox" id="hmt" class="hidden-menu-ticker"></input>
+
+    <ul class="hidden-menu">
+        <h1>Ваши курсы</h1> 
+        <div className="course"></div>
+        <div className="course"></div>
+        <div className="course"></div>
+        
+    </ul>
+
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+
       </div>
+
+    
+    
+
     </div>
   );
 };
