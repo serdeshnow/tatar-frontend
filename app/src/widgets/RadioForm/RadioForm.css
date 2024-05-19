@@ -1,0 +1,31 @@
+.form_wrapper_radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3vh;
+  justify-content: center;
+}
+
+.text_label {
+  font-size: 25px;
+  color: #482c14;
+  margin-bottom: 3px;
+}
+
+.question_number {
+  font-size: 25px;
+  color: #482c14;
+  margin-bottom: 3px;
+}
+.text_radio {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  border: 2px solid #482c14;
+  padding: 0.5rem 1rem;
+  /* width: 100%; */
+  /* margin: 0.5rem 0 1rem; */
+  /* margin-top: 5px; */
+  height: 20px;
+  /* width: 15rem; */
+  font-size: 20px;
+}

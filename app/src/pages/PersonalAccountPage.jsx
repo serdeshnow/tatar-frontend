@@ -8,6 +8,7 @@ import ProgressBarContainer from "../components/ProgressBarContainer/ProgressBar
 import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const PersonalAccountPage = () => {
   const [resDataUser, setResDataUser] = useState({});
@@ -56,7 +57,9 @@ export const PersonalAccountPage = () => {
       <div className="avatar_wrapper">
         {/* <img src={fire} className="counter_icon" alt="" /> */}
         <img src={avatar} className="avatar_img" alt="" />
-        <button className="start_btn">Начать!</button>
+        <Link to="test">
+          <button className="start_btn">Начать!</button>
+        </Link>
       </div>
 
       <div className="right_block">
