@@ -25,7 +25,7 @@
 .list_item {
   list-style-type: none;
   font-family: "Kodchasan", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 a,
@@ -37,10 +37,12 @@ a:visited {
 
 #forum {
   pointer-events: none;
+  color: #3b3b3bbc;
 }
 
 #friends {
   pointer-events: none;
+  color: #3b3b3b;
 }
 .echpochmack_counter {
   display: flex;
